@@ -1,0 +1,36 @@
+/* element selector */
+/* ref : colorhunt.co */
+body{
+    background-color: aqua;
+}
+.col{
+    width: 25%;
+    background-color: yellow;
+    float:left;
+}
+
+.col1{
+    width: 23%;
+    background-color: yellow;
+    float: left;
+}
+.img-responsive{
+    width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+
+.bg-prigmary{
+    background-color: black ;
+}
+
+.img-rounded{
+    border-radius: 20px;
+}
+
+.rounded{
+    /* top-left top-right*/
+    border-radius: 50% 50% 0 0;
+}
+
