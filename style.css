@@ -1,36 +1,100 @@
-/* element selector */
-/* ref : colorhunt.co */
-body{
-    background-color: aqua;
+/* elemen selector */
+/* ref: colorhunt.co */
+/* mobile */
+* {
+  box-sizing: border-box;
 }
-.col{
-    width: 25%;
-    background-color: yellow;
-    float:left;
+body {
+  background-color: #8e7ab5;
 }
 
-.col1{
-    width: 23%;
+/* css tablet */
+@media screen and (min-width: 600px) {
+  body {
     background-color: yellow;
+  }
+
+  .col-sm-6 {
+    width: 50%;
     float: left;
-}
-.img-responsive{
+  }
+
+  .col-12 {
     width: 100%;
-}
-.text-center{
-    text-align: center;
+    float: left;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+    float: left;
+    background-color: yellow;
+  }
 }
 
-.bg-prigmary{
-    background-color: black ;
+/* css desktop */
+@media screen and (min-width: 992px) {
+  body {
+    background-color: green;
+  }
+
+  .col {
+    width: 25%;
+    float: left;
+  }
+
+  .col-4 {
+    width: 33.33%;
+    float: left;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+    float: left;
+  }
 }
 
-.img-rounded{
-    border-radius: 20px;
+/* class selector */
+
+.img-responsive {
+  width: 100%;
+  max-height: 400px;
 }
 
-.rounded{
-    /* top-left top-right*/
-    border-radius: 50% 50% 0 0;
+.text-center {
+  text-align: center;
 }
 
+.bg-primary {
+  background-color: #fdf0d1;
+}
+
+.rounded {
+  border-radius: 20px;
+}
+
+.img-rounded {
+  border-radius: 50% 0 50% 0;
+}
+
+/* dosen si */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row-3::after {
+  content: "";
+  clear: both;
+  display: inline;
+}
+
+.col-3 {
+  width: 66.67%;
+  float: left;
+}
+
+.p-1 {
+  padding: 10px;
+}
